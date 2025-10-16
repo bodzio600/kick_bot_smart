@@ -101,7 +101,7 @@ environment:
 
 | Variable | Description | Default | Example |
 |----------|-------------|---------|---------|
-| `CHANNEL` | Target Kick.com channel name | *Required* | `anka_e` |
+| `CHANNEL` | Target Kick.com channel name | *Required* | `asmongold` |
 | `SPAWN_VIEWERS` | Target number of viewers to spawn | *Required* | `50` |
 | `FLUCTUATION_PERCENT` | Percentage of viewer fluctuation (±) | `0.15` | `0.4` (40%) |
 | `MAJOR_FLUCTUATION_INTERVAL` | Time range for major fluctuations (seconds) | `180,600` | `120,240` |
