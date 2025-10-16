@@ -64,9 +64,8 @@ text
 3. **Add your proxies** to `proxies.txt` (one per line):
 
 ip:port
-ip:port:username:password
 
-text
+ip:port:username:password
 
 4. **Configure environment variables** in `docker-compose.yml`
 
