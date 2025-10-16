@@ -50,7 +50,7 @@
 
 1. **Clone the repository**
 
-git clone https://github.com/yourusername/kick-viewer-bot.git
+git clone https://github.com/bodzio600/kick-viewer-bot.git
 cd kick-viewer-bot
 
 text
