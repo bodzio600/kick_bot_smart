@@ -53,13 +53,13 @@
 git clone https://github.com/bodzio600/kick-viewer-bot.git
 cd kick-viewer-bot
 
-text
+
 
 2. **Create proxies file**
 
 touch proxies.txt
 
-text
+
 
 3. **Add your proxies** to `proxies.txt` (one per line):
 
@@ -93,7 +93,7 @@ environment:
 
     LOG_INTERVAL=10
 
-text
+
 
 ---
 
@@ -135,14 +135,14 @@ Create a `proxies.txt` file in the root directory with your proxies:
 1.2.3.4:8080
 5.6.7.8:3128
 
-text
+
 
 **Format 2: IP:Port:Username:Password**
 
 1.2.3.4:8080:user:pass
 5.6.7.8:3128:admin:secret
 
-text
+
 
 > ⚠️ **Important**: At least one proxy is required for the bot to function
 
@@ -154,31 +154,31 @@ text
 
 docker-compose up -d
 
-text
+
 
 ### View logs
 
 docker-compose logs -f kick_viewer
 
-text
+
 
 ### Stop the bot
 
 docker-compose down
 
-text
+
 
 ### Restart the bot
 
 docker-compose restart
 
-text
+
 
 ### Check status
 
 docker-compose ps
 
-text
+
 
 ---
 
@@ -190,7 +190,7 @@ The bot provides detailed real-time statistics:
 ❌ Failed: 3 | 👥 Viewers: 52 | 🟢 Live : True |
 ⚡ Threads: 48 Active/ 22 InActive/ 70 Total
 
-text
+
 
 **Legend:**
 - 👁️ **Watching**: Currently active connections
