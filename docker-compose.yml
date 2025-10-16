@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  kick_viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile-kick
+    container_name: kick_viewbot
+    environment:
+      - CHANNEL=anka_e
+      - SPAWN_VIEWERS=50
+      - LOG_INTERVAL=10
+      - FLUCTUATION_PERCENT=0.4 # value , how kick viewers flactuate, to look like human getting in stream. 0.4 is 40% +- SPAWN_VIEWERS
+      - MAJOR_FLUCTUATION_INTERVAL=120,240 # big flactuate which is agresive like 30%
+      - MINOR_FLUCTUATION_INTERVAL=60,120 # small flactuate like 1-5%
+      - TIMEOUT_WORKERS=0,1  # timeout between spawining workers
+      - TIMEOUT_PING=3,8 # timeout betwwen sending ping to kick. ping is telling kick that we are watching
+    volumes:
+      - .:/app
+    stdin_open: true 
+    tty: true
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 1g
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535
+    command: ["python", "kick-viewbot.py"]
